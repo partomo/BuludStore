@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Bazta.Identity.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="Bulud.Base" Version="1.0.0-alpha" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.19" />
+      <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="8.0.19" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BuludStore.Domain\BuludStore.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
