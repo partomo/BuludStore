@@ -1,0 +1,6 @@
+@BuludStore_HostAddress = http://localhost:5047
+
+GET {{BuludStore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
