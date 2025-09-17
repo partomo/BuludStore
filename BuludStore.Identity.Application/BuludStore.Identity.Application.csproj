@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Bazta.Identity.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Bulud.Base" Version="1.0.0-alpha" />
+      <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.19" />
+      <PackageReference Include="Minio" Version="6.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BuludStore.Application\BuludStore.Application.csproj" />
+      <ProjectReference Include="..\BuludStore.Identity.Domain\BuludStore.Identity.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
