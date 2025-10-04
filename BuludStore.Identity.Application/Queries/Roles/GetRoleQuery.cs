@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Bazta.Identity.Application.DTOs;
+using BuludStore.Identity.Application.DTOs;
 using MediatR;
 
-namespace Bazta.Identity.Application.Queries.Roles;
+namespace BuludStore.Identity.Application.Queries.Roles;
 
 public class GetRoleQuery : IRequest<RoleDto>
 {

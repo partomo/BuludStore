@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Domain.Entities;
 using Bulud.Base.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 

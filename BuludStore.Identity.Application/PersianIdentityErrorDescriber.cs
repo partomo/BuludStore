@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application;
+namespace BuludStore.Identity.Application;
 
 public class PersianIdentityErrorDescriber : IdentityErrorDescriber
 {

@@ -1,6 +1,7 @@
 ﻿using Bazta.Identity.Domain.Entities;
 using Bulud.Base.Authorization;
 using Bulud.Base.Extensions;
+using BuludStore.Identity.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 

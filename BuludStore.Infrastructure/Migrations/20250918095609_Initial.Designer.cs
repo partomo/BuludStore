@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BuludStore.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250916092825_Initial")]
+    [Migration("20250918095609_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -74,6 +74,9 @@ namespace BuludStore.Infrastructure.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("BirthDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -92,8 +95,8 @@ namespace BuludStore.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("LastName")
                         .HasMaxLength(100)
@@ -179,7 +182,7 @@ namespace BuludStore.Infrastructure.Migrations
                     b.ToTable("UserRoles", (string)null);
                 });
 
-            modelBuilder.Entity("BuludStore.Domain.Entities.City", b =>
+            modelBuilder.Entity("BuludStoreWebApi.Domain.Entities.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -216,7 +219,7 @@ namespace BuludStore.Infrastructure.Migrations
                     b.ToTable("Cities", (string)null);
                 });
 
-            modelBuilder.Entity("BuludStore.Domain.Entities.Province", b =>
+            modelBuilder.Entity("BuludStoreWebApi.Domain.Entities.Province", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -351,15 +354,15 @@ namespace BuludStore.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BuludStore.Domain.Entities.City", b =>
+            modelBuilder.Entity("BuludStoreWebApi.Domain.Entities.City", b =>
                 {
-                    b.HasOne("BuludStore.Domain.Entities.Province", "Province")
+                    b.HasOne("BuludStoreWebApi.Domain.Entities.Province", "Province")
                         .WithMany()
                         .HasForeignKey("ProvinceId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("BuludStore.Domain.Entities.Province", null)
+                    b.HasOne("BuludStoreWebApi.Domain.Entities.Province", null)
                         .WithMany("Counties")
                         .HasForeignKey("ProvinceId1");
 
@@ -407,7 +410,7 @@ namespace BuludStore.Infrastructure.Migrations
                     b.Navigation("UserRoles");
                 });
 
-            modelBuilder.Entity("BuludStore.Domain.Entities.Province", b =>
+            modelBuilder.Entity("BuludStoreWebApi.Domain.Entities.Province", b =>
                 {
                     b.Navigation("Counties");
                 });

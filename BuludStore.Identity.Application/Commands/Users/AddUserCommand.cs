@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Bazta.Identity.Application.DTOs;
+using BuludStore.Identity.Application.DTOs;
 using MediatR;
 
 namespace Bazta.Identity.Application.Commands.Users;
@@ -16,6 +16,7 @@ public class AddUserCommand : IRequest<UserDto>
     public required string PhoneNumber { get; set; }
     [Required]
     public required string Password { get; set; }
+    public DateTime? BirthDate { get; set; }
     public string? Description { get; set; }
     public int? ProvinceId { get; set; }
     public int? CountyId { get; set; }

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Bazta.Identity.Application.Commands.Roles;
-using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Application.Commands.Roles;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application.Handlers.Roles;
+namespace BuludStore.Identity.Application.Handlers.Roles;
 
 public class AddRoleCommandHandler(RoleManager<AppRole> roleManager, IMapper mapper)
     : IRequestHandler<AddRoleCommand, AppRole>

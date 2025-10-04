@@ -1,8 +1,9 @@
 ﻿using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Bazta.Identity.Infrastructure.Configuration;
+namespace BuludStore.Identity.Infrastructure.Configuration;
 
 public class UsersEntityConfiguration : IEntityTypeConfiguration<AppUser>
 {

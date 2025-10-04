@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Bazta.Identity.Application.DTOs;
+using BuludStore.Identity.Application.DTOs;
 using MediatR;
 
-namespace Bazta.Identity.Application.Commands.Users
+namespace BuludStore.Identity.Application.Commands.Users
 {
     public class LoginUserCommand : IRequest<TokenDto>
     {
         [Required]
-        public required string UserName { get; set; }
+        public required string PhoneNumber { get; set; }
         [Required]
-        public required string Password { get; set; }
+        public required string Otp { get; set; }
     }
 }

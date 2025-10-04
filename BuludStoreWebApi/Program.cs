@@ -1,9 +1,10 @@
-using Bazta.Identity.Application;
 using Bazta.Identity.Application.Authorization;
 using Bazta.Identity.Domain.Entities;
-using Bazta.Identity.Domain.Repositories;
-using Bazta.Identity.Infrastructure;
-using Bazta.Identity.Infrastructure.Repositories;
+using BuludStore.Identity.Application;
+using BuludStore.Identity.Domain.Entities;
+using BuludStore.Identity.Domain.Repositories;
+using BuludStore.Identity.Infrastructure;
+using BuludStore.Identity.Infrastructure.Repositories;
 using Bulud.Base.Extensions;
 using Bulud.Base.Middlewares;
 using BuludStore.Infrastructure;

@@ -1,7 +1,7 @@
-﻿using Bazta.Identity.Domain.Entities;
-using Bulud.Base.Infrastructure;
+﻿using Bulud.Base.Infrastructure;
+using BuludStore.Identity.Domain.Entities;
 
-namespace Bazta.Identity.Domain.Repositories;
+namespace BuludStore.Identity.Domain.Repositories;
 
 public interface IUserRolesRepository : IRepository<AppUserRole>
 {

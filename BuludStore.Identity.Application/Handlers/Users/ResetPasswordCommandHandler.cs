@@ -1,10 +1,11 @@
 using System.Security.Authentication;
 using AutoMapper;
-using Bazta.Identity.Application.Commands.Users;
-using Bazta.Identity.Application.DTOs;
 using Bazta.Identity.Domain.Entities;
 using Bulud.Base.Exceptions;
 using Bulud.Base.Services;
+using BuludStore.Identity.Application.Commands.Users;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 

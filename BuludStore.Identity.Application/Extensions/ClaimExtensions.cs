@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
-using Bazta.Identity.Application.DTOs;
+using BuludStore.Identity.Application.DTOs;
 
-namespace Bazta.Identity.Application.Extensions;
+namespace BuludStore.Identity.Application.Extensions;
 
 public static class ClaimExtensions
 {

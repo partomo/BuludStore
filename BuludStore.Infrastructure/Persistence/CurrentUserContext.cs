@@ -12,11 +12,11 @@ public class CurrentUserContext(IHttpContextAccessor httpContextAccessor) : ICur
             var provinceId = httpContextAccessor.HttpContext?.User.FindFirst("province_id")?.Value;
             if (provinceId == null)
                 return null;
-            
+
             return int.Parse(provinceId);
         }
     }
-    
+
     public int? CountyId
     {
         get
@@ -26,6 +26,24 @@ public class CurrentUserContext(IHttpContextAccessor httpContextAccessor) : ICur
                 return null;
             return int.Parse(countyId);
         }
+    }
+
+
+    public List<string>? RoleNames
+    {
+        get
+        {
+            var role = httpContextAccessor.HttpContext?.User.FindAll("role_name")?.Select(c => c.Value).ToList();
+            return role;
+        }
+    }
+
+
+    public bool HasRole(params string[] roles)
+    {
+        if (RoleNames == null) return false;
+
+        return RoleNames.Any(r => roles.Any(role => r.Equals(role, StringComparison.OrdinalIgnoreCase)));
     }
 
     public bool IsCountyAdmin()

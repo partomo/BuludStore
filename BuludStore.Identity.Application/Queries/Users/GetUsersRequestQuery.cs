@@ -1,9 +1,9 @@
-﻿using Bazta.Identity.Application.DTOs;
-using Bulud.Base;
+﻿using Bulud.Base;
 using Bulud.Base.Queries;
+using BuludStore.Identity.Application.DTOs;
 using MediatR;
 
-namespace Bazta.Identity.Application.Queries.Users;
+namespace BuludStore.Identity.Application.Queries.Users;
 
 public class GetUsersRequestQuery : RequestQuery, IRequest<ListResult<UserDto>>
 {

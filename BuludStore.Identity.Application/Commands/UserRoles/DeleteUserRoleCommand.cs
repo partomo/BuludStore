@@ -1,4 +1,4 @@
-﻿namespace Bazta.Identity.Application.Commands.UserRoles;
+﻿namespace BuludStore.Identity.Application.Commands.UserRoles;
 
 public class DeleteUserRoleCommand
 {

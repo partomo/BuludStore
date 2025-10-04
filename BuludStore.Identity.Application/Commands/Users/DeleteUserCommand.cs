@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using MediatR;
 
-namespace Bazta.Identity.Application.Commands.Users;
+namespace BuludStore.Identity.Application.Commands.Users;
 
 public class DeleteUserCommand : IRequest
 {

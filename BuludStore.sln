@@ -1,5 +1,5 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuludStore", "BuludStore\BuludStore.csproj", "{909B2A2F-EF2C-4F5A-A6A4-90E9F8A41263}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuludStoreWebApi", "BuludStoreWebApi\BuludStoreWebApi.csproj", "{909B2A2F-EF2C-4F5A-A6A4-90E9F8A41263}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0CD61530-1DFF-4CAD-98D3-FB444F40374F}"
 EndProject

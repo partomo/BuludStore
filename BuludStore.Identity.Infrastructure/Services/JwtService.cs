@@ -1,13 +1,14 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Bazta.Identity.Application.Interfaces;
 using Bazta.Identity.Domain.Entities;
 using Bulud.Base;
+using BuludStore.Identity.Application.Interfaces;
+using BuludStore.Identity.Domain.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Bazta.Identity.Infrastructure.Services;
+namespace BuludStore.Identity.Infrastructure.Services;
 
 public class JwtService(IOptions<JwtSettings> settings) : IJwtService
 {

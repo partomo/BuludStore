@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
-using Bazta.Identity.Application.DTOs;
-using Bazta.Identity.Application.Queries.Users;
 using Bazta.Identity.Domain.Entities;
 using Bulud.Base;
 using Bulud.Base.Infrastructure;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Application.Queries.Users;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 
 namespace Bazta.Identity.Application.Handlers.Users;

@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Bazta.Identity.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Domain.Entities;
+namespace BuludStore.Identity.Domain.Entities;
 
 public class AppUserRole : IdentityUserRole<string>
 {

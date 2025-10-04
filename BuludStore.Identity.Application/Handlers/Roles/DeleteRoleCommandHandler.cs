@@ -1,10 +1,10 @@
-﻿using Bazta.Identity.Application.Commands.Roles;
-using Bazta.Identity.Domain.Entities;
-using Bulud.Base.Exceptions;
+﻿using Bulud.Base.Exceptions;
+using BuludStore.Identity.Application.Commands.Roles;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application.Handlers.Roles;
+namespace BuludStore.Identity.Application.Handlers.Roles;
 
 public class DeleteRoleCommandHandler(RoleManager<AppRole> roleManager) : IRequestHandler<DeleteRoleCommand>
 {

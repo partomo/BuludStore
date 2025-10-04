@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Bazta.Identity.Application.DTOs;
-using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 
-namespace Bazta.Identity.Application.Commands.Roles;
+namespace BuludStore.Identity.Application.Commands.Roles;
 
 public class AddRoleCommand : IRequest<AppRole>
 {

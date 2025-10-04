@@ -1,11 +1,13 @@
 ﻿using AutoMapper;
-using Bazta.Identity.Application.Commands.Roles;
 using Bazta.Identity.Application.Commands.Users;
-using Bazta.Identity.Application.DTOs;
 using Bazta.Identity.Domain.Entities;
 using Bulud.Base;
+using BuludStore.Identity.Application.Commands.Roles;
+using BuludStore.Identity.Application.Commands.Users;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Domain.Entities;
 
-namespace Bazta.Identity.Application.Mapping;
+namespace BuludStore.Identity.Application.Mapping;
 
 public class MappingProfile : Profile
 {

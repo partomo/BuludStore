@@ -1,4 +1,4 @@
-﻿namespace Bazta.Identity.Application.DTOs;
+﻿namespace BuludStore.Identity.Application.DTOs;
 
 public class TokenDto
 {

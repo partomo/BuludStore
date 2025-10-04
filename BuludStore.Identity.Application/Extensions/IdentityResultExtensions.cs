@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application.Extensions;
+namespace BuludStore.Identity.Application.Extensions;
 
 public static class IdentityResultExtensions
 {

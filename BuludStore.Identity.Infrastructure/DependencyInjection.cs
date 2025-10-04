@@ -1,16 +1,17 @@
-﻿using Bazta.Identity.Application.Commands.Users;
-using Bazta.Identity.Application.Interfaces;
-using Bazta.Identity.Application.Mapping;
-using Bazta.Identity.Domain.Entities;
-using Bazta.Identity.Domain.Repositories;
-using Bazta.Identity.Infrastructure.Repositories;
-using Bazta.Identity.Infrastructure.Services;
+﻿using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Domain.Repositories;
+using BuludStore.Identity.Infrastructure.Repositories;
 using Bulud.Base;
+using BuludStore.Identity.Application.Commands.Users;
+using BuludStore.Identity.Application.Interfaces;
+using BuludStore.Identity.Application.Mapping;
+using BuludStore.Identity.Domain.Entities;
+using BuludStore.Identity.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Bazta.Identity.Infrastructure
+namespace BuludStore.Identity.Infrastructure
 {
     public static class DependencyInjection
     {
@@ -32,9 +33,8 @@ namespace Bazta.Identity.Infrastructure
             var roles = new List<AppRole>
             {
                 new AppRole { Name = "Programmer", DisplayName = "برنامه نویس" },
-                new AppRole { Name = "SuperAdmin", DisplayName = "مدیر کشوری" },
-                new AppRole { Name = "ProvinceAdmin", DisplayName = "مدیر استانی" },
-                new AppRole { Name = "CountyAdmin", DisplayName = "مدیر شهرستان" },
+                new AppRole { Name = "Admin", DisplayName = "ادمین" },
+                new AppRole { Name = "User", DisplayName = "کاربر" },
             };
             
             foreach (var role in roles)
@@ -45,8 +45,8 @@ namespace Bazta.Identity.Infrastructure
 
             var users = new List<AppUser>
             {
-                new AppUser { FirstName = "شایان", LastName = "خجسته منش", UserName ="09145065451" ,PhoneNumber = "09145065451", NationalCode = "1720129411" },
-                new AppUser { FirstName = "مهران", LastName = "نوین", UserName ="11111111111" ,PhoneNumber = "11111111111", NationalCode = "1111111111" },
+                new AppUser { FirstName = "محمد", LastName = "پرتونیا", UserName ="09388799476" ,PhoneNumber = "09388799476", NationalCode = "1720268355" },
+                new AppUser { FirstName = "شایان", LastName = "خجسته منش", UserName ="09145065451" ,PhoneNumber = "09145065451", NationalCode = "1111111111" },
             };
 
             for (int i = 0; i < users.Count; i++)

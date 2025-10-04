@@ -1,6 +1,7 @@
 ﻿using Bazta.Identity.Application.Commands.Users;
-using Bazta.Identity.Application.DTOs;
-using Bazta.Identity.Application.Queries.Users;
+using BuludStore.Identity.Application.Commands.Users;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Application.Queries.Users;
 using Bulud.Base;
 using Bulud.Base.Attributes;
 using Bulud.Base.Queries;

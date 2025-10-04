@@ -1,11 +1,12 @@
 ﻿using Bazta.Identity.Application.Commands.IdentityOtp;
 using Bazta.Identity.Domain.Entities;
 using BuludStore.Application.Commands.Otp;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application.Handlers.IdentityOtp;
+namespace BuludStore.Identity.Application.Handlers.IdentityOtp;
 
 public class RequestIdentityOtpHandler(IMediator mediator, UserManager<AppUser> userManager) : IRequestHandler<RequestIdentityOtpCommand, string?>
 {

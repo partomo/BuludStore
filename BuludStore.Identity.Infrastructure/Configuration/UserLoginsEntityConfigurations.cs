@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Bazta.Identity.Infrastructure.Configuration;
+namespace BuludStore.Identity.Infrastructure.Configuration;
 
 public class UserLoginsEntityConfigurations : IEntityTypeConfiguration<IdentityUserLogin<string>>
 {

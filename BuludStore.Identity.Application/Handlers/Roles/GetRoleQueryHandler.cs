@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using Bazta.Identity.Application.DTOs;
-using Bazta.Identity.Application.Extensions;
-using Bazta.Identity.Application.Queries.Roles;
-using Bazta.Identity.Domain.Entities;
+using BuludStore.Identity.Application.Extensions;
 using Bulud.Base.Exceptions;
+using BuludStore.Identity.Application.DTOs;
+using BuludStore.Identity.Application.Queries.Roles;
+using BuludStore.Identity.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace Bazta.Identity.Application.Handlers.Roles;
+namespace BuludStore.Identity.Application.Handlers.Roles;
 
 public class GetRoleQueryHandler(RoleManager<AppRole> roleManager, IMapper mapper)
     : IRequestHandler<GetRoleQuery, RoleDto>

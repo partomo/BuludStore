@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Bazta.Identity.Infrastructure.Configuration;
+namespace BuludStore.Identity.Infrastructure.Configuration;
 
 public class UserTokensEntityConfigurations : IEntityTypeConfiguration<IdentityUserToken<string>>
 {
